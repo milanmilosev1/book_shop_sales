@@ -1,11 +1,10 @@
 ﻿using BookShop.Models.Books;
 using BookShop.Models.Customers;
-using BookShop.Models.Orders;
 
-namespace BookShop.Services.OrderManager.OrderManager
+namespace BookShop.Services.OrderService
 {
     public interface IOrderManager
     {
-        public void ProcessOrder(Customer customer, Book book, DateTime orderDate);
+        public void ProcessOrder(Customer customer, List<Book> books, DateTime orderDate);
     }
 }

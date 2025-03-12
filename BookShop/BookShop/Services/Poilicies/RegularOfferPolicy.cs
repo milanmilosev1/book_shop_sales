@@ -6,6 +6,7 @@ namespace BookShop.Services.Poilicies
     {
         public void ApplyPolicy(Order order)
         {
+            Console.WriteLine("Regular offer\n");
             order.OrderPrice *= 1.5;
         }
     }

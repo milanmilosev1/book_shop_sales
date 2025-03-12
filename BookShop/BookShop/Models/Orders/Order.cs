@@ -6,18 +6,18 @@ namespace BookShop.Models.Orders
     public class Order 
     {
         public Customer Customer { get; set; }
-        public Book Book { get; set; }
-        public DateTime? OrderDate { get; set; }
+        public List<Book> Books { get; set; }
+        public DateTime OrderDate { get; set; }
         public double? OrderPrice { get; set; } = 0;
 
         public Order()
         {
         }
 
-        public Order(Customer customer, Book book, DateTime? orderDate)
+        public Order(Customer customer, List<Book> books, DateTime orderDate)
         {
             Customer = customer;
-            Book = book;
+            Books = books;
             OrderDate = orderDate;
         }
     }
