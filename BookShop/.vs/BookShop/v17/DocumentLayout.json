@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\services\\orderservice\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\services\\orderservice\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\services\\discountservice\\discountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\services\\discountservice\\discountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\services\\discountservice\\idiscountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\services\\discountservice\\idiscountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\services\\poilicies\\specialofferpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\services\\poilicies\\specialofferpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|c:\\users\\milanmilo\u0161ev\\source\\repos\\book_shop_sales\\bookshop\\bookshop\\services\\poilicies\\regularofferpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3465C9E-9A70-427A-9011-D59E0D3B0CD8}|BookShop\\BookShop.csproj|solutionrelative:bookshop\\services\\poilicies\\regularofferpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Program.cs",
+              "RelativeDocumentMoniker": "BookShop\\Program.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Program.cs",
+              "RelativeToolTip": "BookShop\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:48:43.064Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "BookShop\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "BookShop\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:43:43.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiscountManager.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\DiscountService\\DiscountManager.cs",
+              "RelativeDocumentMoniker": "BookShop\\Services\\DiscountService\\DiscountManager.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\DiscountService\\DiscountManager.cs",
+              "RelativeToolTip": "BookShop\\Services\\DiscountService\\DiscountManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:34:41.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDiscountManager.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\DiscountService\\IDiscountManager.cs",
+              "RelativeDocumentMoniker": "BookShop\\Services\\DiscountService\\IDiscountManager.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\DiscountService\\IDiscountManager.cs",
+              "RelativeToolTip": "BookShop\\Services\\DiscountService\\IDiscountManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:34:33.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegularOfferPolicy.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\Poilicies\\RegularOfferPolicy.cs",
+              "RelativeDocumentMoniker": "BookShop\\Services\\Poilicies\\RegularOfferPolicy.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\Poilicies\\RegularOfferPolicy.cs",
+              "RelativeToolTip": "BookShop\\Services\\Poilicies\\RegularOfferPolicy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:46:54.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpecialOfferPolicy.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\Poilicies\\SpecialOfferPolicy.cs",
+              "RelativeDocumentMoniker": "BookShop\\Services\\Poilicies\\SpecialOfferPolicy.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\Poilicies\\SpecialOfferPolicy.cs",
+              "RelativeToolTip": "BookShop\\Services\\Poilicies\\SpecialOfferPolicy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:44:42.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderManager.cs",
+              "DocumentMoniker": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\OrderService\\OrderManager.cs",
+              "RelativeDocumentMoniker": "BookShop\\Services\\OrderService\\OrderManager.cs",
+              "ToolTip": "C:\\Users\\MilanMilo\u0161ev\\source\\repos\\book_shop_sales\\BookShop\\BookShop\\Services\\OrderService\\OrderManager.cs",
+              "RelativeToolTip": "BookShop\\Services\\OrderService\\OrderManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:41:52.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
