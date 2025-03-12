@@ -9,9 +9,9 @@ namespace BookShop.Services.PointsService
             customer.Points += booksPurchased;
         }
 
-        public int? GetPoints(Customer customer)
+        public void DecreasePoints(Customer customer, int pointsToBeDecreased)
         {
-            return customer.Points;
+            customer.Points -= pointsToBeDecreased;
         }
     }
 }

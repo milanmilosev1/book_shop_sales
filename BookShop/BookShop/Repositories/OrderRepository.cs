@@ -15,17 +15,14 @@ namespace BookShop.Repositories
             Orders.Add(order);
         }
 
-        public List<Order> GetOrdersByCustomerId(int? customerId)
+        public List<Order> GetAllOrders()
         {
-            List<Order> ordersList = new List<Order>();
+            List<Order> returnList = new List<Order>();
             foreach(var order in Orders)
             { 
-                if(order.Customer.CustomerId == customerId)
-                {
-                    ordersList.Add(order);
-                }
+                returnList.Add(order);
             }
-            return ordersList.OrderBy(o => o.OrderPrice).ToList();
+            return returnList;
         }
     }
 }
