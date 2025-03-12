@@ -7,5 +7,6 @@ namespace BookShop.Repositories
     {
         public void AddOrder(Order order);
         public List<Order> GetOrdersByCustomerId(int? customerId);
+        public List<Order> GetAllOrders();
     }
 }

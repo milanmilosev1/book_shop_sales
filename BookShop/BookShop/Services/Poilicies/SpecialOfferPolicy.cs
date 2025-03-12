@@ -22,14 +22,16 @@ namespace BookShop.Services.Poilicies
         {
             Console.WriteLine("Special offer\n");
             int lastBook = order.Books.Count - 1;
-            List<Book> thirdBooks = order.Books.Where((x, i) => i % 3 == 0).ToList();
-            if(thirdBooks != null)
+            List<Book> thirdBooks = order.Books.Where((x, i) => i % 3 == 0 && i > 0).ToList();
+            Console.WriteLine(thirdBooks.Count);
+            if(thirdBooks != null && thirdBooks.Count > 0)
             {
                 foreach (var book in thirdBooks)
                 {
                     order.OrderPrice -= book.BasePrice;
+                    order.Customer.Points--;
                 }
-                order.Customer.Points -= thirdBooks.Count;
+                
             }
         }
     }

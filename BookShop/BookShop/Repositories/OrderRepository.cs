@@ -27,5 +27,11 @@ namespace BookShop.Repositories
             }
             return ordersList.OrderBy(o => o.OrderPrice).ToList();
         }
+
+        public List<Order> GetAllOrders()
+        {
+            List<Order> returnList = [.. Orders];
+            return returnList;
+        }
     }
 }
