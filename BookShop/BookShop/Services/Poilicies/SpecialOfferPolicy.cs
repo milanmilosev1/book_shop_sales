@@ -1,5 +1,5 @@
-﻿using BookShop.Models.Books;
-using BookShop.Models.Orders;
+﻿using BookShop.Models.Orders;
+using BookShop.Services.PointsService;
 
 namespace BookShop.Services.Poilicies
 {
@@ -10,23 +10,25 @@ namespace BookShop.Services.Poilicies
         }
         public void ApplyPolicy(Order order)
         {
-            //refactor
             Console.WriteLine("Special offer");
-            //List<Book> thirdBooks = [.. order.Books.Where((x, i) => i % 3 == 0 && i > 0)];
-            //Console.WriteLine($"free books count{thirdBooks.Count}");
+            MakeBooksFree(order);
         }
 
         private void MakeBooksFree(Order order)
         {
-            int booksCount = 0;
-            foreach(var book in order.Books)
+            PointsManager pointsManager = new PointsManager();
+            for (int i = 0; i < order.Books.Count; i++)
             {
-                if(booksCount == 2)
+                if(i % 3 == 0 && i > 0)
                 {
-                    order.Books.OrderBy(x => x.BasePrice).Where(x => x.BasePrice > 0).FirstOrDefault().BasePrice = 0;
-                    booksCount = 0;
+                    var book = order.Books.Where(x => x.BasePrice > 0).OrderBy(x => x.BasePrice).FirstOrDefault();            
+
+                    if (book != null)
+                    {
+                        order.OrderPrice -= book.BasePrice;
+                        pointsManager.DecreasePoints(order.Customer, 1);
+                    }
                 }
-                booksCount++;
             }
         }
     }
