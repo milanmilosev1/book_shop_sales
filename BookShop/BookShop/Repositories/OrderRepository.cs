@@ -1,11 +1,10 @@
-﻿using BookShop.Models.Customers;
-using BookShop.Models.Orders;
+﻿using BookShop.Models.Orders;
 
 namespace BookShop.Repositories
 {
     public class OrderRepository : IOrderRepository
     {
-        public List<Order> Orders = new List<Order>();
+        public List<Order> Orders;
         public OrderRepository(List<Order> orders)
         {
             Orders = orders;
@@ -16,7 +15,7 @@ namespace BookShop.Repositories
             Orders.Add(order);
         }
 
-        public List<Order> GetOrdersByCustomerId(int customerId)
+        public List<Order> GetOrdersByCustomerId(int? customerId)
         {
             List<Order> ordersList = new List<Order>();
             foreach(var order in Orders)
@@ -26,7 +25,7 @@ namespace BookShop.Repositories
                     ordersList.Add(order);
                 }
             }
-            return ordersList;
+            return ordersList.OrderBy(o => o.OrderPrice).ToList();
         }
     }
 }
