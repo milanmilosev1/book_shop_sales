@@ -6,7 +6,7 @@ namespace BookShop.Models.Orders
     public class Order 
     {
         public Customer Customer { get; set; }
-        public List<Book> Books { get; set; }
+        public List<Book>? Books { get; set; }
         public DateTime OrderDateTime { get; set; }
         public double? OrderPrice { get; set; } = 0;
 
@@ -14,7 +14,7 @@ namespace BookShop.Models.Orders
         {
         }
 
-        public Order(Customer customer, List<Book> books, DateTime orderDate)
+        public Order(Customer customer, List<Book>? books, DateTime orderDate)
         {
             Customer = customer;
             Books = books;
