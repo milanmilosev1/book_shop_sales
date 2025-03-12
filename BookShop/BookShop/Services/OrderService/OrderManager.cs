@@ -35,7 +35,7 @@ namespace BookShop.Services.OrderService
 
         public void ProcessOrder(Customer customer, List<Book> books, DateTime orderDate)
         {
-            _policy = PolicyFactory.CreatePolicy(orderDate.Day);
+            _policy = PolicyFactory.CreatePolicy(orderDate);
             Order order = new(customer, books, orderDate);
             CalculateOrderPrice(order);
             _orderRepository.AddOrder(order);

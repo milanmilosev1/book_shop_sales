@@ -1,4 +1,5 @@
 ﻿using BookShop.Models.Orders;
+using BookShop.Services.PointsService;
 
 namespace BookShop.Services.DiscountManager
 {
@@ -12,7 +13,8 @@ namespace BookShop.Services.DiscountManager
                 string input = Console.ReadLine();
                 if(input == "Y")
                 {
-                    order.Customer.Points -= 5;
+                    PointsManager pointsManager = new PointsManager();
+                    pointsManager.DecreasePoints(order.Customer, 5);
                     order.OrderPrice *= 0.98;
                     return;
                 }

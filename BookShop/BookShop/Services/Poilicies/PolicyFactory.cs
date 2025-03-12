@@ -1,20 +1,16 @@
-﻿using BookShop.Repositories;
-
-namespace BookShop.Services.Poilicies
+﻿namespace BookShop.Services.Poilicies
 {
     public class PolicyFactory
     {
-        public static IPolicy CreatePolicy(int dateTime)
+        public static IPolicy CreatePolicy(DateTime orderDate)
         {
-            switch (dateTime)
+            int daysInMonth = DateTime.DaysInMonth(orderDate.Year, orderDate.Month);
+
+            if (orderDate.Day > daysInMonth - 7)
             {
-                case > 23:
-                    return new SpecialOfferPolicy();
-                case <= 23:
-                    return new RegularOfferPolicy();
-                default:
-                    throw new NotSupportedException();
+                return new SpecialOfferPolicy();
             }
+            return new RegularOfferPolicy();
         }
     }
 }
