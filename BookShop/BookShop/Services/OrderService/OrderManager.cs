@@ -9,11 +9,10 @@ using BookShop.Services.PointsService;
 
 namespace BookShop.Services.OrderService
 {
-    public class OrderManager(IOrderRepository orderRepository, IPointsManager pointsManager, IDiscountManager discountManager, IFormatter formatter) : IOrderManager
+    public class OrderManager(IOrderRepository orderRepository, IDiscountManager discountManager, IFormatter formatter) : IOrderManager
     {
         private readonly IOrderRepository _orderRepository = orderRepository;
         private IPolicy? _policy;
-        private readonly IPointsManager _pointsManager = pointsManager;
         private readonly IDiscountManager _discountManager = discountManager;
         private readonly IFormatter _formatter = formatter;
 
@@ -23,7 +22,7 @@ namespace BookShop.Services.OrderService
             {
                 order.OrderPrice += book.BasePrice;
             }
-            _pointsManager.AddPoints(order.Customer, order.Books.Count);
+            order.Customer.AddPoints(order.Books.Count);
             _discountManager.ApplyDiscount(order);
             _policy.ApplyPolicy(order);
         }

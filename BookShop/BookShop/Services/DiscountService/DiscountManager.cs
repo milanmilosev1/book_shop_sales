@@ -1,6 +1,7 @@
 ﻿using BookShop.Models.Orders;
 using BookShop.Services.DiscountManager;
 using BookShop.Services.PointsService;
+using BookShop.Constants;
 
 namespace BookShop.Services.DiscountService
 {
@@ -8,15 +9,14 @@ namespace BookShop.Services.DiscountService
     {
         public void ApplyDiscount(Order order)
         {
-            if(order.Customer.Points >= 5)
+            if(order.Customer.Points >= Constant.DISCOUNT_POINTS) // konstante
             {
                 Console.WriteLine("Would you like to use your points for a 2% discount? (Y/N)");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
                 if (input == "Y" || input == "y")
                 {
-                    PointsManager pointsManager = new PointsManager();
-                    pointsManager.DecreasePoints(order.Customer, 5);
-                    order.OrderPrice *= 0.98;
+                    order.Customer.DecreasePoints(Constant.DISCOUNT_POINTS);
+                    order.OrderPrice *= Constant.DISCOUNT_MULTIPLIER;
                     return;
                 }
                 else if(input == "N" || input == "n")

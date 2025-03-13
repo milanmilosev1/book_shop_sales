@@ -7,8 +7,7 @@ namespace BookShop.Services.Formatters
     {
         public string Format(Order order)
         {
-            if (order == null)
-                throw new ArgumentNullException(nameof(order));
+            ArgumentNullException.ThrowIfNull(order);
 
             var sb = new StringBuilder();
             sb.AppendLine($"Customer ID: {order.Customer.CustomerId}");

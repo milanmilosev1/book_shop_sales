@@ -2,16 +2,18 @@
 
 namespace BookShop.Services.PointsService
 {
-    public class PointsManager : IPointsManager
+    // extension metode
+    public static class PointsManager
     {
-        public void AddPoints(Customer customer, int booksPurchased)
+        public static void AddPoints(this Customer customer, int points)
         {
-            customer.Points += booksPurchased;
+            customer.Points += points;
         }
 
-        public void DecreasePoints(Customer customer, int pointsToBeDecreased)
+        public static void DecreasePoints(this Customer customer, int points)
         {
-            customer.Points -= pointsToBeDecreased;
+            customer.Points -= points;
         }
+
     }
 }
