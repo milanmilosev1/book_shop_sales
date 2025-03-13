@@ -1,4 +1,5 @@
-﻿using BookShop.Models.Orders;
+﻿using BookShop.Constants;
+using BookShop.Models.Orders;
 
 namespace BookShop.Services.Poilicies
 {
@@ -7,7 +8,7 @@ namespace BookShop.Services.Poilicies
         public void ApplyPolicy(Order order)
         {
             Console.WriteLine("Regular offer");
-            order.OrderPrice *= 1.5;
+            order.OrderPrice *= Constant.REGULAR_POLICY_MULTIPLIER;
         }
     }
 }

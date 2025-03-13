@@ -5,10 +5,8 @@ using BookShop.Repositories;
 using BookShop.Services.DiscountService;
 using BookShop.Services.Formatters;
 using BookShop.Services.OrderService;
-using BookShop.Services.PointsService;
 
 OrderRepository orderRepository = new([]);
-PointsManager pointsManager = new();
 DiscountManager discountManager = new();
 JsonFormatter jsonFormatter = new();
 PlainTextFormatter plainTextFormatter = new();
@@ -25,8 +23,8 @@ DateTime parsedDate = DateTime.Parse("2025-03-30 10:30:00");
 
 List<Book> books = [book, book2, book3, book4, book5, book6, book7];
 
-OrderManager orderManager = new(orderRepository, pointsManager, discountManager, plainTextFormatter);
-OrderManager orderManager1 = new(orderRepository, pointsManager, discountManager, jsonFormatter);
+OrderManager orderManager = new(orderRepository, discountManager, plainTextFormatter);
+OrderManager orderManager1 = new(orderRepository, discountManager, jsonFormatter);
 
 Order order = orderManager.ProcessOrder(customer, books, parsedDate);
 

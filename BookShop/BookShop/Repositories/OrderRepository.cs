@@ -2,13 +2,9 @@
 
 namespace BookShop.Repositories
 {
-    public class OrderRepository : IOrderRepository
+    public class OrderRepository(List<Order> orders) : IOrderRepository
     {
-        public List<Order> Orders;
-        public OrderRepository(List<Order> orders)
-        {
-            Orders = orders;
-        }
+        public List<Order> Orders = orders;
 
         public void AddOrder(Order order)
         {
@@ -17,12 +13,7 @@ namespace BookShop.Repositories
 
         public List<Order> GetAllOrders()
         {
-            List<Order> returnList = new List<Order>();
-            foreach(var order in Orders)
-            { 
-                returnList.Add(order);
-            }
-            return returnList;
+            return Orders;
         }
     }
 }
